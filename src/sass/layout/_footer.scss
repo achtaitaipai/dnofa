@@ -41,6 +41,9 @@
 		}
 	}
 
+	&_link {
+		color: $white;
+	}
 	@media (min-width: media(md)) {
 		&::before {
 			transform: translateY(-50%) skewY(-1deg);
