@@ -1,0 +1,25 @@
+$media: (
+	's': 26em,
+	'ms': 48em,
+	'md': 64em,
+	'xl': 72em,
+);
+
+@function media($key) {
+	@return map-get($media, $key);
+}
+
+@mixin above($key) {
+	@media screen and (min-width: $key) {
+		& {
+			@content;
+		}
+	}
+}
+@mixin below($key) {
+	@media screen and (max-width: map-get($media, $key)) {
+		& {
+			@content;
+		}
+	}
+}

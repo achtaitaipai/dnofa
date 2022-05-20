@@ -1,0 +1,44 @@
+.newsletter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	&_title {
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 2;
+	}
+	&_input,
+	&_submit {
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		border: 1px solid $white;
+		box-shadow: 2px 2px 2px 0px #27272a;
+		color: $white;
+	}
+
+	&_input {
+		background-color: transparent;
+
+		&::placeholder {
+			color: $white;
+			font-weight: 400;
+		}
+	}
+	&_submit {
+		background-color: $black;
+		transform: rotate(-1deg);
+		cursor: pointer;
+	}
+	@media (min-width: media(ms)) {
+		width: 100%;
+		order: 1;
+		/* justify-content: center; */
+	}
+	@media (min-width: media(md)) {
+		justify-content: stretch;
+	}
+	@media (min-width: media(xl)) {
+		margin-left: auto;
+		width: auto;
+	}
+}

@@ -1,0 +1,62 @@
+.header {
+	display: flex;
+	align-items: center;
+	background-color: $blue1;
+	height: 4rem;
+	&_logoContainer {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80%;
+	}
+	&_logo {
+		object-fit: cover;
+		height: 100%;
+	}
+	&_navBtn {
+		height: 100%;
+		width: auto;
+		aspect-ratio: 69 / 69;
+		background-color: $blue2;
+		color: $white;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 1rem;
+		text-shadow: 1px 1px darken($blue2, 30);
+	}
+	@media (min-width: media(ms)) {
+		padding-inline: 1rem;
+		&_logoContainer {
+			width: fit-content;
+		}
+	}
+	@media (min-width: media(md)) {
+		height: 7rem;
+		padding-inline: 2rem;
+		&_logoContainer {
+			height: 100%;
+		}
+	}
+}
+.nav {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	justify-content: flex-end;
+	&_link {
+		background-color: $white;
+		color: $black;
+		font-weight: 700;
+		white-space: nowrap;
+		padding: 0.25rem 0.5rem;
+		border-radius: 1rem;
+		box-shadow: 3px 3px 4px 0px #000000d6;
+		border: 1px solid $black;
+		text-transform: capitalize;
+		line-height: 1.2;
+	}
+	@media (min-width: media(md)) {
+		gap: 2rem;
+	}
+}

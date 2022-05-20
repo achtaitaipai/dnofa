@@ -1,0 +1,12 @@
+@each $name, $var in $media {
+	@media (min-width: $var) {
+		.#{$name}-below {
+			display: none;
+		}
+	}
+	@media (max-width: $var) {
+		.#{$name}-above {
+			display: none;
+		}
+	}
+}
