@@ -7,6 +7,9 @@ export default defineConfig({
 			input: {
 				main: 'index.html',
 				magazine: './magazine/index.html',
+				equipe: './equipe/index.html',
+				boutique: './boutique/index.html',
+				leclubdesfondus: './clubdesfondus/index.html',
 			},
 		},
 	},
