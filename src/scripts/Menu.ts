@@ -16,7 +16,6 @@ export default class Menu {
 		)
 		this._firstFocusableElement = focusableElements[0]
 		this._lastFocusableElement = focusableElements[focusableElements.length - 1]
-		console.log(this._firstFocusableElement)
 		this._openBtn.addEventListener('click', e => this._open(e))
 		this._closeBtn.addEventListener('click', e => this._close(e))
 		this._menu.addEventListener('keydown', e => this._keyDown(e))

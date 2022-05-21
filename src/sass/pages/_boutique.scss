@@ -1,0 +1,28 @@
+.boutique {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	&_text {
+		max-width: min(90%, 70rem);
+		padding: 1rem;
+		border-radius: 1rem;
+		color: $black;
+		font-size: 1.5rem;
+		a {
+			color: $red1;
+		}
+		@media (min-width: media(ms)) {
+			font-size: clamp(2rem, 4vw, 3.5rem);
+		}
+	}
+	&_link {
+		background: linear-gradient(180deg, #0084ca 0%, #006ea8 100%);
+		padding: 0.375rem 0.75rem;
+		color: $white;
+		text-transform: uppercase;
+		border-radius: 1rem;
+		font-size: clamp(1rem, 2vw, 1.5rem);
+		font-weight: 700;
+	}
+}

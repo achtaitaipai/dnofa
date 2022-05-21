@@ -62,6 +62,7 @@
 	@media (min-width: media(md)) {
 		gap: 2rem;
 		flex-direction: row;
+		align-items: flex-start;
 		&_img {
 			max-width: 50%;
 		}

@@ -1,0 +1,21 @@
+.club {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	img {
+		max-width: 80%;
+		max-height: 60vh;
+	}
+	p {
+		max-width: min(80%, 50rem);
+		background-color: $green1;
+		padding: 1rem;
+		border-radius: 1rem;
+		color: $white;
+		transform: rotate(-2deg);
+	}
+	strong {
+		color: $red1;
+	}
+}

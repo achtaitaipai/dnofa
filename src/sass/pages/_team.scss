@@ -1,0 +1,43 @@
+.team {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: media(ms)) {
+		align-items: flex-start;
+		flex-direction: row;
+	}
+}
+.member {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	gap: 1rem;
+	@media (min-width: media(ms)) {
+		width: 40%;
+	}
+
+	&_title {
+		background-color: $green1;
+		color: $white;
+		border-radius: 1rem;
+		padding: 0.25rem 0.5rem;
+		transform: rotate(-2deg);
+	}
+	&_img {
+		width: 100px;
+		@media (min-width: media(ms)) {
+			width: 150px;
+		}
+	}
+	&_description {
+		width: 90%;
+		color: $white;
+		background-color: $blue1;
+		border-radius: 1rem;
+		padding: 1rem;
+	}
+}
