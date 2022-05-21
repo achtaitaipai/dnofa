@@ -36,8 +36,8 @@ export default class Menu {
 	private _open(e: MouseEvent) {
 		e.preventDefault()
 		this._menu.style.setProperty('display', 'flex')
-		this._menu.classList.remove('navMobile-closed')
-		this._menu.classList.add('navMobile-open')
+		this._menu.classList.remove('nav-closed')
+		this._menu.classList.add('nav-open')
 		this._firstFocusableElement.focus()
 		this._openBtn.setAttribute('aria-expanded', 'true')
 		this._closeBtn.setAttribute('aria-expanded', 'true')
@@ -46,8 +46,8 @@ export default class Menu {
 	private _close(e?: MouseEvent) {
 		e?.preventDefault()
 		this._menu.style.setProperty('animation-play-state', 'running')
-		this._menu.classList.remove('navMobile-open')
-		this._menu.classList.add('navMobile-closed')
+		this._menu.classList.remove('nav-open')
+		this._menu.classList.add('nav-closed')
 		this._openBtn.setAttribute('aria-expanded', 'false')
 		this._closeBtn.setAttribute('aria-expanded', 'false')
 		this._openBtn.focus()

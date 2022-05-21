@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-inline: 10%;
-	margin-block: 3rem;
+	margin-block: 1rem 0;
 	flex-direction: column;
 	gap: 2rem;
 
@@ -33,7 +33,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-inline: 10%;
-	margin-block: 3rem;
+	margin-block: 0 3rem;
 	flex-direction: column;
 	gap: 2rem;
 
@@ -49,7 +49,6 @@
 		font-size: 1rem;
 		color: $white;
 		transform: rotate(1deg);
-		text-shadow: 1px 1px darken($blue1, 30);
 		max-width: 600px;
 	}
 	&_eye {
@@ -89,7 +88,6 @@
 		width: 100%;
 		font-size: 1rem;
 		color: $white;
-		text-shadow: 1px 1px darken($green1, 30);
 	}
 	&_textContainer {
 		padding: 1rem;
@@ -145,7 +143,7 @@
 		color: $white;
 		text-transform: uppercase;
 		border-radius: 1rem;
-		font-size: clamp(1.5rem, 3vw, 2.5rem);
+		font-size: clamp(1rem, 2vw, 1.5rem);
 		font-weight: 700;
 	}
 }

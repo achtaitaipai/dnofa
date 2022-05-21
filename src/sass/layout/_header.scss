@@ -39,24 +39,3 @@
 		}
 	}
 }
-.nav {
-	display: flex;
-	gap: 1rem;
-	width: 100%;
-	justify-content: flex-end;
-	&_link {
-		background-color: $white;
-		color: $black;
-		font-weight: 700;
-		white-space: nowrap;
-		padding: 0.25rem 0.5rem;
-		border-radius: 1rem;
-		box-shadow: 3px 3px 4px 0px #000000d6;
-		border: 1px solid $black;
-		text-transform: capitalize;
-		line-height: 1.2;
-	}
-	@media (min-width: media(md)) {
-		gap: 2rem;
-	}
-}
