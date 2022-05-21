@@ -1,0 +1,144 @@
+.magazineIntro {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-inline: 10%;
+	margin-block: 3rem;
+	flex-direction: column;
+	gap: 3rem;
+	&_text {
+		background-color: $green1;
+		padding: 1rem;
+		border-radius: 1rem;
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: $white;
+		transform: rotate(-1deg);
+		text-shadow: 1px 1px darken($green1, 30);
+	}
+	&_imgsContainer {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	&_couv {
+		max-height: 80vh;
+		transform: rotate(3deg);
+		max-width: 90%;
+	}
+}
+
+.magazinePages {
+	margin-inline: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	&_title {
+		background-color: $blue1;
+		padding: 1rem;
+		border-radius: 1rem;
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: $white;
+		transform: rotate(-1deg);
+		text-shadow: 1px 1px darken($blue1, 30);
+		justify-self: flex-start;
+		transform: rotate(-2deg);
+		line-height: 1.2;
+		@media (min-width: media(ms)) {
+			font-size: 2.5rem;
+			color: $black;
+			text-shadow: none;
+			background-color: transparent;
+			align-self: flex-start;
+			transform: none;
+		}
+	}
+}
+
+@mixin article($clr, $selector) {
+	background-color: $clr;
+	.#{$selector}_subTitle {
+		text-shadow: 1px 1px darken($clr, 30);
+	}
+	.#{$selector}_number {
+		color: $clr;
+		box-shadow: 1px 1px darken($clr, 30);
+	}
+	@media (min-width: media(ms)) {
+		background-color: transparent;
+		.#{$selector}_text {
+			background-color: $clr;
+		}
+	}
+}
+
+.magazineArticle {
+	&:nth-of-type(1) {
+		@include article($red1, magazineArticle);
+	}
+	&:nth-of-type(2) {
+		@include article($green1, magazineArticle);
+	}
+	&:nth-of-type(3) {
+		@include article($red1, magazineArticle);
+	}
+	&:nth-of-type(4) {
+		@include article($blue1, magazineArticle);
+	}
+	width: 100%;
+	color: $white;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	transform: rotate(2deg);
+	&_subTitle {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	&_number {
+		display: inline-block;
+		background-color: $white;
+		width: 2rem;
+		height: auto;
+		aspect-ratio: 69 / 69;
+		text-align: center;
+		border-radius: 50%;
+		text-shadow: none;
+		margin-inline: 1rem;
+	}
+	&_description {
+		font-size: 1rem;
+	}
+	&_img {
+		max-width: 100%;
+		transform: rotate(-2deg);
+		margin-block: 1rem;
+	}
+	&:nth-of-type(2n) {
+		flex-direction: row-reverse;
+		transform: rotate(-2deg);
+	}
+	&:nth-of-type(2n) &_img {
+		transform: rotate(2deg);
+	}
+	@media (min-width: media(ms)) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		background-color: transparent;
+		padding: 0;
+		gap: 1rem;
+		&_text {
+			padding: 1rem;
+			border-radius: 1rem;
+		}
+		&_title {
+			margin: 0;
+		}
+		&_img {
+			max-width: 50%;
+		}
+	}
+}
