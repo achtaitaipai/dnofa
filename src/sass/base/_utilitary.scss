@@ -1,0 +1,30 @@
+@each $name, $var in $media {
+	@media (min-width: $var) {
+		.#{$name}-below {
+			display: none;
+		}
+	}
+	@media (max-width: $var) {
+		.#{$name}-above {
+			display: none;
+		}
+	}
+}
+[data-visible='false'],
+[data-visible='false'] [data-delay] {
+	opacity: 0;
+	transform: translate3d(0, 15px, 0);
+	transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1), transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+}
+[data-visible='true'],
+[data-visible='true'] [data-delay] {
+	// opacity: 1;
+	transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1), transform 0.5s cubic-bezier(0.5, 0, 0, 1);
+	// transform: translate3d(0, 0px, 0);
+}
+
+@for $i from 1 to 10 {
+	[data-delay='#{$i}'] {
+		transition-delay: 0.2s * $i;
+	}
+}

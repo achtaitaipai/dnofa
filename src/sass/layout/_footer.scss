@@ -31,7 +31,7 @@
 			align-items: center;
 			flex-direction: row;
 		}
-		@media (min-width: 72em) {
+		@media (min-width: media(md)) {
 			width: 100%;
 		}
 	}

@@ -54,10 +54,12 @@
 		transform: rotate(1deg);
 		max-width: 600px;
 	}
-	&_eye {
+	.eye-icon {
 		position: absolute;
 		right: 0;
 		top: -1rem;
+		max-width: 3rem;
+		height: auto;
 	}
 	@media (min-width: media(md)) {
 		gap: 2rem;

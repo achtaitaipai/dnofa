@@ -53,7 +53,9 @@
 		/* justify-content: center; */
 	}
 	@media (min-width: media(md)) {
-		justify-content: stretch;
+		// justify-content: stretch;
+		width: auto;
+		margin-left: auto;
 	}
 	@media (min-width: media(xl)) {
 		margin-left: auto;
