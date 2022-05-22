@@ -115,6 +115,7 @@
 		max-width: 100%;
 		transform: rotate(-2deg);
 		margin-block: 1rem;
+		max-height: 80vh;
 	}
 	&:nth-of-type(2n) {
 		flex-direction: row-reverse;

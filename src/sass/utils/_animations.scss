@@ -1,0 +1,47 @@
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(1px, -1px, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(-2px, 1px, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(2px, -2px, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(-1px, 2px, 0);
+	}
+}
+
+@keyframes fromTop {
+	to {
+		transform: translate3D(0, 0, 0);
+		opacity: 1;
+	}
+}
+@keyframes menuIn {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes menuOut {
+	99% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(100%);
+		display: none;
+	}
+}

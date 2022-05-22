@@ -10,6 +10,7 @@ export default defineConfig({
 				equipe: './equipe/index.html',
 				boutique: './boutique/index.html',
 				leclubdesfondus: './clubdesfondus/index.html',
+				mentionslegales: './mentionslegales/index.html',
 			},
 		},
 	},

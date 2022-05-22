@@ -25,13 +25,13 @@
 		font-size: 1rem;
 		text-shadow: 1px 1px darken($blue2, 30);
 	}
-	@media (min-width: media(ms)) {
+	@include above(ms) {
 		padding-inline: 1rem;
 		&_logoContainer {
 			width: fit-content;
 		}
 	}
-	@media (min-width: media(md)) {
+	@include above(md) {
 		height: 7rem;
 		padding-inline: 2rem;
 		&_logoContainer {

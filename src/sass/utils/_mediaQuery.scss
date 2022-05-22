@@ -9,17 +9,18 @@ $media: (
 	@return map-get($media, $key);
 }
 
-@mixin above($key) {
-	@media screen and (min-width: $key) {
-		& {
-			@content;
-		}
-	}
+@function below($key) {
+	@return (min-width: map-get($media, $key));
 }
+
 @mixin below($key) {
-	@media screen and (max-width: map-get($media, $key)) {
-		& {
-			@content;
-		}
+	@media screen and (max-width: (map-get($media, $key))) {
+		@content;
 	}
 }
+@mixin above($key) {
+	@media screen and (min-width: ( map-get($media, $key) )) {
+		@content;
+	}
+}
+@debug (map-get($media, ms)-1);

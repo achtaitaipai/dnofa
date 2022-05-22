@@ -25,9 +25,27 @@
 		}
 	}
 	&_submit {
+		position: relative;
 		background-color: $black;
 		transform: rotate(-1deg);
 		cursor: pointer;
+		&::after {
+			content: "S'inscrire";
+			position: absolute;
+			display: grid;
+			place-content: center;
+			inset: -1px;
+			border-radius: 0.5rem;
+			background-color: $white;
+			color: $black;
+			clip-path: circle(0%);
+			transition: clip-path 0.3s ease-out;
+			font-weight: 700;
+		}
+		&:hover::after,
+		&:focus::after {
+			clip-path: circle(70%);
+		}
 	}
 	@media (min-width: media(ms)) {
 		width: 100%;
