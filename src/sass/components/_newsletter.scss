@@ -47,6 +47,11 @@
 			clip-path: circle(70%);
 		}
 	}
+	&_inputsContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	@media (min-width: media(ms)) {
 		width: 100%;
 		order: 1;
