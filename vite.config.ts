@@ -11,6 +11,7 @@ export default defineConfig({
 				boutique: './boutique/index.html',
 				leclubdesfondus: './clubdesfondus/index.html',
 				mentionslegales: './mentionslegales/index.html',
+				cgu: './conditionsgeneralesutilisation/index.html',
 			},
 		},
 	},

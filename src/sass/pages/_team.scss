@@ -26,6 +26,7 @@
 		border-radius: 1rem;
 		padding: 0.25rem 0.5rem;
 		transform: rotate(-2deg);
+		text-shadow: 1px 1px darken($green1, 30);
 	}
 	&_img {
 		width: 100px;

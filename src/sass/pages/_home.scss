@@ -39,6 +39,9 @@
 	margin-block: 0 3rem;
 	flex-direction: column;
 	gap: 2rem;
+	&_title {
+		text-shadow: 1px 1px darken($green1, 30);
+	}
 
 	&_img {
 		max-height: 80vh;
@@ -81,6 +84,9 @@
 	gap: 2rem;
 	width: 100%;
 	margin: 0;
+	&_title {
+		text-shadow: 1px 1px darken($green1, 30);
+	}
 	&_img {
 		max-width: 40%;
 	}
