@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-inline: 10%;
-	margin-block: 3rem;
+	margin-block: 2rem 1rem;
 	flex-direction: column;
 	gap: 3rem;
 	&_text {
@@ -29,12 +29,44 @@
 	}
 }
 
+.magazineDesc {
+	// width: min(100%, 33em);
+	width: fit-content;
+	margin-inline: auto;
+	margin-block: 1.5rem;
+	background-color: $red1;
+	color: $white;
+	padding: 1rem;
+	// border-radius: 1rem;
+	border-radius: max(0px, min(1rem, calc((100vw - 0.25rem - 100%) * 9999)));
+
+	// transform: rotate(-1deg);
+	&_title {
+		line-height: 1.2;
+		text-shadow: 1px 1px darken($red1, 30);
+		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+		img {
+			height: 2.5rem;
+		}
+	}
+	&_list {
+		padding-inline: 1rem;
+		line-height: 1.5;
+		li {
+			list-style: disc;
+		}
+	}
+}
+
 .magazinePages {
 	margin-inline: 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
+
 	&_title {
 		background-color: $blue1;
 		padding: 1rem;
@@ -46,7 +78,24 @@
 		text-shadow: 1px 1px darken($blue1, 30);
 		justify-self: flex-start;
 		transform: rotate(-2deg);
-		line-height: 1.2;
+		line-height: 1;
+		align-self: flex-start;
+		img.logo {
+			height: 2.5rem;
+			float: left;
+		}
+		span.logo {
+			display: none;
+			white-space: nowrap;
+		}
+		@media screen and (max-width: 450px) {
+			img.logo {
+				display: none;
+			}
+			span.logo {
+				display: inline;
+			}
+		}
 		@media (min-width: media(ms)) {
 			font-size: 2.5rem;
 			color: $black;

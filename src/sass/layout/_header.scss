@@ -18,12 +18,12 @@
 		height: 100%;
 		width: auto;
 		aspect-ratio: 69 / 69;
-		background-color: $blue2;
+		background-color: $green1;
 		color: $white;
 		font-weight: 700;
 		text-transform: uppercase;
 		font-size: 1rem;
-		text-shadow: 1px 1px darken($blue2, 30);
+		text-shadow: 1px 1px darken($green1, 30);
 	}
 	@include above(ms) {
 		padding-inline: 1rem;
@@ -32,10 +32,23 @@
 		}
 	}
 	@include above(md) {
-		height: 7rem;
+		height: 5rem;
 		padding-inline: 2rem;
 		&_logoContainer {
 			height: 100%;
+			position: relative;
+			&::after {
+				content: 'Le mag des petits mordus de sport';
+				position: absolute;
+				color: $white;
+				background-color: $black;
+				padding: 0.1rem 0.2rem;
+				top: 100%;
+				left: 0;
+				font-size: 0.8rem;
+				transform: translate(0, -50%) rotate(-1deg);
+				border-radius: 0.2rem;
+			}
 		}
 	}
 }

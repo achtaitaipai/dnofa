@@ -7,10 +7,9 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header_logoContainer">
-				<img src="/assets/afond-logo-nb-light.png" alt="logo À fond" class="header_logo md-below" />
-				<img src="/assets/afond-logo-nb.png" alt="logo À fond" class="header_logo md-above" />
-			</div>
+			<a class="header_logoContainer" href="../" title="accueil">
+				<img src="/assets/afond-logo-nb-light.png" alt="logo À fond" class="header_logo" />
+			</a>
 			<button class="header_navBtn ms-below" aria-expanded="false" aria-controls="menu-principal" id="openBtn-js">Menu</button>
 			<nav class="nav nav-closed" role="navigation" id="menu-principal">
 				<button class="nav_closeBtn ms-below" aria-expanded="true" aria-controls="menu-principal" id="closeBtn-js">X</button>
@@ -27,13 +26,37 @@
 				Pour t’abonner ou nous soutenir, c’est sur <a href="https://fr.ulule.com/afondlemag/" title="cagnote Ulule">Ulule</a> que ça se passe !
 			</p>
 			<a href="https://fr.ulule.com/afondlemag/" class="boutique_link" title="cagnote Ulule">Rejoins-nous !</a>
+			<div id="modal-success" aria-hidden="true" class="modal success">
+				<div tabindex="-1" data-micromodal-close>
+					<div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal_content">
+						<header>
+							<h2 id="modal-1-title">Inscription à la newsletter</h2>
+							<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+							<button aria-label="Close modal" data-micromodal-close></button>
+						</header>
+						<div id="modal-1-content">Votre inscription a bien été prise en compte !</div>
+					</div>
+				</div>
+			</div>
+			<div id="modal-error" aria-hidden="true" class="modal error">
+				<div tabindex="-1" data-micromodal-close>
+					<div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal_content">
+						<header>
+							<h2 id="modal-1-title">Inscription à la newsletter</h2>
+							<button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+							<button aria-label="Close modal" data-micromodal-close></button>
+						</header>
+						<div id="modal-1-content">Oup ! une erreur est survenue, veuillez réessayer plus tard.</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer_container">
-				<form action="" class="newsletter">
+				<form action="" class="newsletter" id="newsletter-js">
 					<h2 class="newsletter_title">S'inscrire à la newsletter :</h2>
 					<div class="newsletter_inputsContainer">
-						<input type="email" placeholder="email" name="email" id="email-newsletter" class="newsletter_input" />
+						<input type="email" placeholder="email" name="email" class="newsletter_input" required id="newsletterInput-js" />
 						<button type="submit" class="newsletter_submit">S'inscrire</button>
 					</div>
 				</form>
