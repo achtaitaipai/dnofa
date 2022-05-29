@@ -30,17 +30,14 @@
 }
 
 .magazineDesc {
-	// width: min(100%, 33em);
 	width: fit-content;
 	margin-inline: auto;
 	margin-block: 1.5rem;
 	background-color: $red1;
 	color: $white;
 	padding: 1rem;
-	// border-radius: 1rem;
-	border-radius: max(0px, min(1rem, calc((100vw - 0.25rem - 100%) * 9999)));
-
-	// transform: rotate(-1deg);
+	border-radius: 1rem;
+	transform: rotate(-1deg);
 	&_title {
 		line-height: 1.2;
 		text-shadow: 1px 1px darken($red1, 30);
