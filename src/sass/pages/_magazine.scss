@@ -30,14 +30,15 @@
 }
 
 .magazineDesc {
-	width: fit-content;
-	margin-inline: auto;
-	margin-block: 1.5rem;
+	width: min(100%, 33em);
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: $red1;
 	color: $white;
 	padding: 1rem;
 	border-radius: 1rem;
-	transform: rotate(-1deg);
 	&_title {
 		line-height: 1.2;
 		text-shadow: 1px 1px darken($red1, 30);
@@ -53,6 +54,12 @@
 		line-height: 1.5;
 		li {
 			list-style: disc;
+		}
+	}
+	@media (min-width: media(s)) {
+		&_text {
+			width: min(100%, 33em);
+			transform: rotate(-1deg);
 		}
 	}
 }
