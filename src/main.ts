@@ -5,4 +5,3 @@ import Newsletter from './scripts/Newsletter'
 Menu.init()
 ScrollAnims.init()
 Newsletter.init()
-console.log('azerty')
