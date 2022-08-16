@@ -45,6 +45,7 @@
 		font-size: 1.5rem;
 		display: flex;
 		align-items: center;
+		white-space:nowrap;
 		img {
 			height: 2.5rem;
 		}
@@ -207,4 +208,8 @@
 			max-width: 50%;
 		}
 	}
+}
+
+[data-gallery]{
+	cursor: pointer;
 }

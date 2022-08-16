@@ -316,6 +316,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+tiny-slider@^2.9.4:
+  version "2.9.4"
+  resolved "https://registry.yarnpkg.com/tiny-slider/-/tiny-slider-2.9.4.tgz#dd5cbf3065f1688ade8383ea6342aefcba22ccc4"
+  integrity sha512-LAs2kldWcY+BqCKw4kxd4CMx2RhWrHyEePEsymlOIISTlOVkjfK40sSD7ay73eKXBLg/UkluAZpcfCstimHXew==
+
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
@@ -327,6 +332,11 @@ typescript@^4.5.4:
   version "4.6.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
   integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
+
+viewerjs@^1.10.5:
+  version "1.10.5"
+  resolved "https://registry.yarnpkg.com/viewerjs/-/viewerjs-1.10.5.tgz#a0f52fe7c15fa27003099af8e7552378ed5fc94d"
+  integrity sha512-QwKrmXlSfKg5x4y74F/jicpHIRqBMMfHXyboOxHDi5n4XAaejjpalphPq4/HW6venQAoMiD57HpVwBk0JvqpSA==
 
 vite@^2.9.9:
   version "2.9.9"

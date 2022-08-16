@@ -1,0 +1,31 @@
+.tns-item {
+  padding: 1rem;
+  max-width: 20rem;
+  p {
+    padding: 0.5rem 1rem;
+    color: $white;
+    border-radius: 1rem;
+    transform: rotate(3deg);
+    &.blue {
+      background-color: $blue1;
+    }
+    &.red {
+      background-color: $red1;
+    }
+    &.green {
+      background-color: $green1;
+    }
+    &.yellow {
+      background-color: $yellow1;
+    }
+    &.left{
+    transform: rotate(-3deg);
+
+    }
+  }
+  span {
+    display: block;
+    text-align: right;
+  }
+}
+
