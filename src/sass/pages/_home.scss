@@ -166,12 +166,12 @@
 			animation: shake 0.8s;
 		}
 	}
-	&_formLink{
-		color:$green1;
-		transition:color .2;
+	&_formLink {
+		color: $green1;
+		transition: color 0.2;
 		position: relative;
-		&::after{
-			content:"";
+		&::after {
+			content: '';
 			position: absolute;
 			background-color: black;
 			height: 2px;
@@ -179,11 +179,22 @@
 			left: 0;
 			bottom: 0;
 			transform-origin: left;
-			transform: scale(0,1);
-			transition: transform .3s;
+			transform: scale(0, 1);
+			transition: transform 0.3s;
 		}
-		&:hover::after{
-			transform: scale(1,1);
+		&:hover::after {
+			transform: scale(1, 1);
 		}
+	}
+}
+
+.video {
+	video {
+		display: block;
+		margin: 0 auto 3rem auto;
+		transform: rotate(-2deg);
+		max-width: 80%;
+		border-radius: 1rem;
+		// outline: 3px solid $black;
 	}
 }

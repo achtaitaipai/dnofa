@@ -1,31 +1,86 @@
-.tns-item {
-  padding: 1rem;
-  max-width: 20rem;
-  p {
-    padding: 0.5rem 1rem;
-    color: $white;
-    border-radius: 1rem;
-    transform: rotate(3deg);
-    &.blue {
-      background-color: $blue1;
-    }
-    &.red {
-      background-color: $red1;
-    }
-    &.green {
-      background-color: $green1;
-    }
-    &.yellow {
-      background-color: $yellow1;
-    }
-    &.left{
-    transform: rotate(-3deg);
-
-    }
-  }
-  span {
-    display: block;
-    text-align: right;
-  }
+.talkofus {
+	margin-top: 5rem;
+	&_title {
+		display: none;
+		background-color: $green1;
+		width: fit-content;
+		padding: 1rem;
+		border-radius: 1rem;
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: #f2f2e9;
+		transform: rotate(-1deg);
+		text-shadow: 1px 1px #000909;
+		line-height: 1;
+		margin: auto;
+	}
 }
 
+.tns-item {
+	padding: 1rem;
+	p {
+		padding: 0.5rem 1rem;
+		color: $white;
+		border-radius: 1rem;
+		transform: rotate(3deg);
+		&.blue {
+			background-color: $blue1;
+		}
+		&.red {
+			background-color: $red1;
+		}
+		&.green {
+			background-color: $green1;
+		}
+		&.yellow {
+			background-color: $yellow1;
+		}
+		&.left {
+			transform: rotate(-3deg);
+		}
+	}
+	.auteur {
+		display: block;
+		text-align: right;
+		a {
+			color: $white;
+			font-weight: 700;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+}
+.sliderWrapper {
+	position: relative;
+}
+#slider-controls {
+	pointer-events: none;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.1rem;
+	z-index: 10;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	button {
+		pointer-events: all;
+		box-shadow: 3px 3px 3px 0px #00000040;
+
+		background-color: $white;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		position: relative;
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-70%, -50%);
+			fill: $green1;
+		}
+	}
+	#nextBtn svg {
+		transform: translate(-30%, -50%);
+	}
+}
