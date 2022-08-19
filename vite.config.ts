@@ -12,6 +12,11 @@ export default defineConfig({
 				mentionslegales: './mentionslegales/index.html',
 				cgu: './conditionsgeneralesutilisation/index.html',
 			},
+			output: {
+				entryFileNames: `assets/[name].js`,
+				chunkFileNames: `assets/[name].js`,
+				assetFileNames: `assets/[name].[ext]`,
+			},
 		},
 	},
 	base: '/',

@@ -45,7 +45,7 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/apple-touch-icon.9a291ffc.9a291ffc.png"
+      href="/assets/apple-touch-icon.9a291ffc.png"
     />
     <link
       rel="icon"
@@ -65,22 +65,21 @@
     />
     <link
       rel="mask-icon"
-      href="/assets/safari-pinned-tab.d8b026c4.8c5f35e5.svg"
+      href="/assets/safari-pinned-tab.d8b026c4.svg"
       color="#5bbad5"
     />
     <title>À FOND | Accueil</title>
     
 	<!-- tiny slider style -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script type="module" crossorigin src="/assets/modulepreload-polyfill.b7f2da20.js"></script>
-    <script type="module" crossorigin src="/assets/main.60badbea.js"></script>
-    <link rel="stylesheet" href="/assets/main.e8c7785a.css">
+    <script type="module" crossorigin src="/assets/main2.js"></script>
+    <link rel="stylesheet" href="/assets/main.css">
   </head>
   <body>
     <header class="header">
       <a class="header_logoContainer" href="./" title="accueil">
         <img
-          src="/assets/afond-logo-nb-light.aaf1642a.f9138667.png"
+          src="/assets/afond-logo-nb-light.aaf1642a.png"
           alt="logo À fond"
           class="header_logo"
         />
@@ -144,7 +143,7 @@
       <!-- ça se vit et ça se lit -->
       <section class="homeHighlight">
         <img
-          src="/assets/tennis.0d01dd59.0d01dd59.png"
+          src="/assets/tennis.0d01dd59.png"
           class="homeHighlight_img md-above"
           alt="Dessin d'un petit garçon et d'une petite fille. Le garçon tient une raquette de tennis."
         />
@@ -152,6 +151,19 @@
           <p>Le sport ça se vit et ça se lit même quand on est petit&nbsp;!</p>
         </div>
       </section>
+
+      <section class="video">
+
+          <video controls >
+    
+            <source src="/assets/presentation.mp4"
+                    type="video/mp4">
+        
+        </video>
+
+
+      </section>
+
       <!-- Pourquoi à fond ? -->
       <section class="homeWhy">
         <div class="homeWhy_text" data-visible="false">
@@ -233,7 +245,7 @@
           </p>
         </div>
         <img
-          src="/assets/une0.3641cbe7.jpg"
+          src="/assets/une0.jpg"
           class="homeWhy_img"
           alt="couverture du magazine : un cycliste souriant lève le poingt en signe de victoire."
           data-visible="false"
@@ -242,7 +254,7 @@
       <!-- 4 commandements -->
       <section class="homeRules">
         <img
-          src="/assets/velo.5714a910.5714a910.png"
+          src="/assets/velo.5714a910.png"
           class="homeRules_img md-above"
           alt="Dessin d'un enfant à vélo."
         />
@@ -314,7 +326,7 @@
             </svg>
 
             <img
-              src="/assets/basket.385ff438.385ff438.png"
+              src="/assets/basket.385ff438.png"
               class="md-above"
               alt="Dessin d'un enfant en tenue de basket levant le doigt."
             />
@@ -342,33 +354,68 @@
           >Boutique</a
         >
       </section>
-	  <!-- <div id="slider">
-		<div>
-			<p class="blue left">1"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium earum, quo adipisci soluta ea "
-				<span class="auteur">Bob Michel</span>
-			</p>
-		</div>
-		<div>
-			<p class="red">2"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium earum, quo adipisci soluta ea "
-				<span class="auteur">Bob Michel</span>
-			</p>
-		</div>
-		<div>
-			<p class="yellow left">3"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium earum, quo adipisci soluta ea "
-				<span class="auteur">Bob Michel</span>
-			</p>
-		</div>
-		<div>
-			<p class="blue">4"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium earum, quo adipisci soluta ea "
-				<span class="auteur">Bob Michel</span>
-			</p>
-		</div>
-		<div>
-			<p class="green left">5"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium earum, quo adipisci soluta ea "
-				<span class="auteur">Bob Michel</span>
-			</p>
-		</div>
-	  </div> -->
+      
+      <section class="talkofus">
+
+      <div class="sliderWrapper">
+          <h2 class="talkofus_title">Ils parlent de nous&nbsp;!</h2>
+        <div id="slider-controls">
+          <button id="previousBtn"><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.6339 0.379394L0.568548 8.5L14.6339 16.6206L14.6339 0.379394Z"/>
+            </svg>
+            </button>
+          <button id="nextBtn"><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.491635 0.379394L14.5569 8.5L0.491637 16.6206L0.491635 0.379394Z"/>
+            </svg>
+            </button>
+        </div>
+            <div id="slider">
+              <div>
+                <p class="blue">"Myriam Alizon a décidé d’écrire pour un nouveau public : les enfants&nbsp;! Elle a imaginé et créé À Fond&nbsp;!"
+                  <span class="auteur"><a href="https://www.lessportives.fr/rencontres/myriam-alizon-cree-a-fond-pour-donner-envie-de-lire-et-de-bouger/" target="_blank">Les Sportives</a></span>
+                </p>
+              </div>
+              <div>
+                <p class="green">"La priorité c'est que les enfants prennent du plaisir à lire des choses qu'ils ne liront pas ailleurs."
+                  <span class="auteur"><a href="https://femmesjournalistesdesport.fr/myriam-alizon-un-magazine-pour-donner-aux-enfants-lenvie-de-lire-et-de-bouger-%EF%BF%BC/" target="_blank">Femmes journalistes de sport</a></span>
+                </p>
+              </div>
+              <div>
+                <p class="red">"Ça n'existait pas et bien sûr qu'il fallait l'inventer&nbsp;!"
+                  <span class="auteur"><a href="https://www.causette.fr/magazines/hors-serie-n-20-l-special-sport-feminin" target="_blank">Causette / Spécial sport</a></span>
+                </p>
+              </div>
+              <div>
+                <p class="green">"Histoires sportives pour petits mordus"
+                  <span class="auteur"><a href="https://www.lejdc.fr/" target="_blank">Le journal du centre</a></span>
+                </p>
+              </div>
+              
+              <div>
+                <p class="blue">"Myriam Alizon a décidé d’écrire pour un nouveau public : les enfants ! Elle a imaginé et créé À Fond !"
+                  <span class="auteur"><a href="https://www.lessportives.fr/rencontres/myriam-alizon-cree-a-fond-pour-donner-envie-de-lire-et-de-bouger/" target="_blank">Les Sportives</a></span>
+                </p>
+              </div>
+              <div>
+                <p class="green">"La priorité c'est que les enfants prennent du plaisir à lire des choses qu'ils ne liront pas ailleurs."
+                  <span class="auteur"><a href="https://femmesjournalistesdesport.fr/myriam-alizon-un-magazine-pour-donner-aux-enfants-lenvie-de-lire-et-de-bouger-%EF%BF%BC/" target="_blank">Femmes journalistes de sport</a></span>
+                </p>
+              </div>
+              <div>
+                <p class="red">"Ça n'existait pas et bien sûr qu'il fallait l'inventer !"
+                  <span class="auteur"><a href="https://www.causette.fr/magazines/hors-serie-n-20-l-special-sport-feminin" target="_blank">Causette / Spécial sport</a></span>
+                </p>
+              </div>
+              <div>
+                <p class="green">"Histoires sportives pour petits mordus"
+                  <span class="auteur"><a href="https://www.lejdc.fr/" target="_blank">Le journal du centre</a></span>
+                </p>
+              </div>
+
+            </div>
+      </div>
+    </section>
+
       <div id="modal-success" aria-hidden="true" class="modal success">
         <div tabindex="-1" data-micromodal-close>
           <div
