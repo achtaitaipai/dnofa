@@ -161,7 +161,8 @@
 		transition: background-image 0.3s;
 		position: relative;
 		transition: background-color 0.3s;
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: $green1;
 			animation: shake 0.8s;
 		}

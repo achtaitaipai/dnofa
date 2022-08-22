@@ -45,7 +45,7 @@
 		font-size: 1.5rem;
 		display: flex;
 		align-items: center;
-		white-space:nowrap;
+		white-space: nowrap;
 		img {
 			height: 2.5rem;
 		}
@@ -210,6 +210,16 @@
 	}
 }
 
-[data-gallery]{
+.magazineRead {
+	text-align: center;
+	margin: 2rem 10%;
+	font-size: clamp(2rem, 3vw, 3.5rem);
+	font-weight: 700;
+	& > * + * {
+		margin-top: 1rem;
+	}
+}
+
+[data-gallery] {
 	cursor: pointer;
 }

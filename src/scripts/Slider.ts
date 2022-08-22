@@ -8,7 +8,7 @@ export default class Slider {
 				container: sliderEl,
 				slideBy: 1,
 				speed: 400,
-				fixedWidth: 300,
+				fixedWidth: 280,
 				mouseDrag: true,
 				arrowKeys: true,
 				loop: true,
