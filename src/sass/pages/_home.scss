@@ -134,6 +134,7 @@
     }
   }
 }
+
 .homeCta {
   display: flex;
   position: relative;
@@ -171,7 +172,43 @@
       animation: shake 0.8s;
     }
   }
+  &_list {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: 700;
+    display: grid;
+    gap: 1rem;
+  }
   &_formLink {
+    color: $green1;
+    transition: color 0.2;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      transform-origin: left;
+      transform: scale(0, 1);
+      transition: transform 0.3s;
+    }
+    &:hover::after {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.homeFormular {
+  max-width: 66ch;
+  margin-inline: auto;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  & a {
     color: $green1;
     transition: color 0.2;
     position: relative;
